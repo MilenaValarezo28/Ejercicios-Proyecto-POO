@@ -54,4 +54,6 @@ class CalCientifica(Calculadora):
 # cal= Multiplicacion()
 calEst = CalEstandar(4,8)
 print(calEst.Multiplicacion())
+calCient = CalCientifica(2,4)
+print(calCient.Circunferencia())
  
