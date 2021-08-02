@@ -2,7 +2,6 @@ from math import pi
 from calculadora import CalEstandar, CalCientifica
 
 class Menu:
-    def __init__(self, titulo="",opciones=[]):
         self.titulo= titulo
         self.opciones= opciones
 
@@ -81,7 +80,7 @@ while opc !='5':
             if opc7 == "7":
                 print("Circunferencia")
                 r= float(input("Ingrese el radio: "))
-                CalCientifica= CalCientifica(n1,n2)
+                CalCient= CalCientifica(n1,n2)
                 Cir= CalCientifica.Circunferencia()
                 print("{}*{}*{}={}".format(2,pi,r,Cir))
                                     
@@ -89,7 +88,7 @@ while opc !='5':
             if opc8 == "8":
                 print("Area Circulo de un circulo")
                 r= int(input("Ingrese el radio: "))
-                CalCientifica = CalCientifica(n1)
+                CalCient = CalCientifica(n1,n2)
                 Acirculo= CalCientifica.AreaCirculo()
                 print("{}*{}**{}={}".format(pi,r,2,Acirculo))
                                         
@@ -97,6 +96,6 @@ while opc !='5':
             if opc9 == "9":
                 print("Area Cuadrado de dos numeros")
                 l1= float(input("Ingrese valor de un lado: "))
-                CalCientifica = CalCientifica(n1,n2)
+                CalCient = CalCientifica(n1,n2)
                 Acuadrado= CalCientifica.AreaCuadrado()
                 print(Acuadrado(l1))
